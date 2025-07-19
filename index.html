@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Netflix - Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <a href="#" class="logo">NETFLIX</a>
+    <a href="#" class="signin-btn">Sign In</a>
+  </div>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Unlimited movies, TV shows and more</h1>
+      <h2>Watch anywhere. Cancel anytime.<br><br>
+      Ready to watch? Enter your email to create or restart your membership.</h2>
+      <form class="email-form" autocomplete="off" id="loginForm">
+        <input type="email" placeholder="Email address" required>
+        <button type="submit">Get Started &gt;</button>
+      </form>
+    </div>
+  </section>
+  <div class="footer">
+    Netflix Basic Clone &copy; 2024
+  </div>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      window.location.href = "movie.html";
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: linear-gradient(to top, #141414 70%, #222 100%);
+  color: #fff;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+  background: rgba(0,0,0,0.7);
+}
+
+.logo {
+  font-size: 2rem;
+  color: #e50914;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 12px #000;
+  text-decoration: none;
+}
+
+.signin-btn {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  text-decoration: none;
+}
+.signin-btn:hover {
+  background: #b0060f;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px 80px 20px;
+  background: url('https://assets.nflxext.com/ffe/siteui/vlv3/6b560b1c-5954-4da4-a61b-1c4c364e2e6f/9d3195bd-edef-49ae-a768-ba780b853241/IN-en-20240527-popsignuptwoweeks-perspective_alpha_website_small.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  min-height: 70vh;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  left: 0;top: 0;width: 100%;height: 100%;
+  background: rgba(0,0,0,0.65);
+  z-index: 0;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #fff;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 16px #000;
+}
+
+.hero h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #fff;
+  line-height: 1.5;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.email-form {
+  display: flex;
+  max-width: 440px;
+  margin: auto;
+  gap: 0;
+}
+.email-form input[type="email"] {
+  flex: 1;
+  padding: 15px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 2px 0 0 2px;
+}
+.email-form button {
+  padding: 15px 22px;
+  font-size: 1rem;
+  background: #e50914;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.email-form button:hover {
+  background: #b0060f;
+}
+
+/* Movies Dashboard Styles */
+.movie-section {
+  padding: 50px 20px 30px 20px;
+}
+.movies-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 32px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: .5px;
+}
+.movies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.movie-card {
+  background: #232323;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.40);
+  width: 200px;
+  transition: transform 0.15s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+.movie-card:hover {
+  transform: scale(1.04);
+}
+.movie-thumb {
+  background-size: cover;
+  background-position: center;
+  height: 280px;
+  width: 100%;
+}
+.movie-info {
+  padding: 15px 14px;
+  color: #fff;
+}
+.movie-info h3 {
+  font-size: 1.1rem;
+  margin: 0 0 8px 0;
+}
+.movie-info p {
+  font-size: 0.95rem;
+  color: #aaa;
+  margin: 0;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 18px;
+  color: #aaa;
+  background: rgba(20,20,20,0.92);
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+  .header {
+    flex-direction: column;
+    padding: 20px;
+    gap: 16px;
+  }
+  .hero {
+    padding: 70px 10px 50px 10px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero h2 {
+    font-size: 1.15rem;
+  }
+  .email-form input,
+  .email-form button {
+    font-size: 0.95rem;
+    padding: 11px;
+  }
+  .email-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .email-form input,
+  .email-form button {
+    border-radius: 2px;
+  }
+  .movies-list {
+    gap: 18px;
+  }
+  .movie-card {
+    width: 95vw;
+    max-width: 320px;
+  }
+  .movie-thumb {
+    height: 200px;
+  }
+}
