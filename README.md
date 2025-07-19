@@ -4,9 +4,9 @@ This is a simple website that looks like Netflix. I made it with just HTML and C
 
 # What’s in This Project?
 
- **Home Page** ("index.html"): Has the Netflix logo, a welcome message, and a button to see movies.
- **Movies Page** ("movies.html"): Shows some  movie cards in a grid.
- **Styles** ("styles.css"): Gives the website its colors and layout.
+ 1. **Home Page** ("index.html"): Has the Netflix logo, a welcome message, and a button to see movies.
+ 2. **Movies Page** ("movies.html"): Shows some  movie cards in a grid.
+ 3. **Styles** ("styles.css"): Gives the website its colors and layout.
 
 # How to Run
 
