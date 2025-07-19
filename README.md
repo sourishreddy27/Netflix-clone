@@ -16,6 +16,6 @@ This is a simple website that looks like Netflix. I made it with just HTML and C
 
 # Why I Made This
 
- How to build web pages with HTML and CSS
- How to style a website with colors and layouts
- How to keep code organized in different files
+ How to build web pages with HTML and CSS.
+ How to style a website with colors and layouts.
+ How to keep code organized in different files.
