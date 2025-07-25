@@ -110,8 +110,6 @@ body {
 .email-form button:hover {
   background: #b0060f;
 }
-
-/* Movies Dashboard Styles */
 .movie-section {
   padding: 50px 20px 30px 20px;
 }
@@ -162,8 +160,6 @@ body {
   color: #aaa;
   margin: 0;
 }
-
-/* Footer */
 .footer {
   text-align: center;
   padding: 18px;
@@ -171,8 +167,6 @@ body {
   background: rgba(20,20,20,0.92);
   font-size: 1rem;
 }
-
-/* Responsive */
 @media (max-width: 650px) {
   .header {
     flex-direction: column;
